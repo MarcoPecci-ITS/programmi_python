@@ -1,5 +1,4 @@
 def uncensor(frase, vocali):
-
     output = []
     idx = 0
     for char in frase:
