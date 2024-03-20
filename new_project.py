@@ -1,6 +1,5 @@
 def uncensor(frase, vocali):
-    output = "".join(vocali[idx] if lettera == '*' else lettera
-                     for idx, lettera in enumerate(frase))
+
     output = []
     idx = 0
     for char in frase:
@@ -13,4 +12,4 @@ def uncensor(frase, vocali):
     return "".join(output)
 
 
-uncensor("H*ll* W*rld", "eoo")
+print(uncensor("H*ll* W*rld!", "eoo"))
